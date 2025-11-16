@@ -6,9 +6,9 @@ public class Document {
     private String auteur;
     private LocalDate anneepublication;
     private boolean disponibilite;
-    public double nbreexemplaire;
+    public int nbreexemplaire;
 
-    public Document(String code,  String titre, String auteur, LocalDate anneepublication, boolean disponibilite, double nbreexemplaire) {
+    public Document(String code,  String titre, String auteur, LocalDate anneepublication, boolean disponibilite, int nbreexemplaire) {
         this.nbreexemplaire = nbreexemplaire;
         this.code = code;
         this.titre = titre;
@@ -17,44 +17,55 @@ public class Document {
         this.disponibilite = disponibilite;
 
     }
+    public Document() {}
+
+    public void setCode(String code) {
+        this.code = code;
+    }
+    public void setTitre(String titre) {
+        this.titre = titre;
+    }
+    public void setAuteur(String auteur) {
+        this.auteur = auteur;
+    }
+    public void setAnneepublication(LocalDate anneepublication) {
+        this.anneepublication = anneepublication;
+    }
+    public void setDisponibilite(boolean disponibilite) {
+        this.disponibilite = disponibilite;
+    }
+    public void setNbreexemplaires(int nbreexemplaire) {
+        this.nbreexemplaire = nbreexemplaire;
+    }
+
+    public String getCode() {
+        return code;
+    }
+    public String getTitre() {
+        return  titre;
+    }
+    public String getAuteur() {
+        return auteur;
+    }
+    public LocalDate getAnneePublication() {
+        return anneepublication;
+    }
+    public boolean isDisponibilite() {
+        return disponibilite;
+    }
+    public int getNbreexemplaire() {
+        return nbreexemplaire;
+    }
+    public void description(){
+        System.out.println("le titre est" + this.titre);
+        System.out.println("code " + this.code);
+        System.out.println("l'auteur s'appelle " + this.auteur);
+        System.out.println("la disponibilité " + this.disponibilite);
+        System.out.println("du " + this.anneepublication);
+        System.out.println("li y a " + this.nbreexemplaire);
+    }
 }
 
 
 
-// Getters
-public String getCode() {
-    return code;
-}
-public String getTitre() {
-    return titre;
-}
-public String getAuteur() {
-    return auteur;
-}
-public LocalDate getAnneepublication() {
-    return anneePublication;
-}
-public boolean getDisponibilite() {
-    return disponibilite;
-}
-public int getNbreexemplaire() {
-    return nbreexemplaire;
-}
-public  void setCode(String code){
-    this.code;
-}
-public void setTitre(String titre){
-    this.titre;
-}
-public void setAuteur(String auteur){
-    this.auteur;
-}
-public void setAnneepublication(LocalDate anneepublication){
-    this.anneepublication;
-}
-public void setDisponibilite(boolean disponibilite){
-    this.disponibilite;
-}
-public void setNbreexemplaire(double nbreexemplaire){
-    this.nbreexemplaire;
-}
+
