@@ -1,0 +1,9 @@
+# Ignorer tout par défaut
+*
+
+# Garder uniquement ce qui est dans PROJECT4
+!.gitignore
+!PROJECT4.iml
+!src/
+!out/
+!.idea/
