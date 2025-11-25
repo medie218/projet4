@@ -4,6 +4,15 @@
 # Garder uniquement ce qui est dans PROJECT4
 !.gitignore
 !PROJECT4.iml
+
+# Garder le dossier src et son contenu
 !src/
+!src/**
+
+# Garder le dossier out et son contenu
 !out/
+!out/**
+
+# Garder le dossier .idea et son contenu
 !.idea/
+!.idea/**
